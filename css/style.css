@@ -1,0 +1,50 @@
+/* Minimal custom styling (Bootstrap handles most layout) */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, rgba(91, 60, 255, 0.22), transparent 56%),
+    linear-gradient(180deg, #f5f7fb 0%, #f5f7fb 100%);
+}
+
+.card {
+  border-radius: 18px;
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Dashed separator for account UI */
+.border-dashed {
+  border-style: dashed !important;
+}
+
+/* Camera button style */
+.btn-camera {
+  background: #7c4dff;
+  border: 1px solid rgba(124, 77, 255, 0.8);
+  color: white;
+  box-shadow: 0 8px 18px rgba(124, 77, 255, 0.25);
+}
+
+.btn-camera:hover {
+  filter: brightness(1.1);
+}
+
+/* Login button color behavior */
+.btn-primary {
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.btn-secondary:hover,
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
